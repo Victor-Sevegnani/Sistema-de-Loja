@@ -1,92 +1,101 @@
 <!DOCTYPE html>
-<style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    line-height: 1.6;
-    background-color: #f9fafb;
-    color: #333;
-    margin: 20px auto;
-    max-width: 900px;
-    padding: 0 15px;
-  }
-  header, main, section, footer {
-    margin-bottom: 2rem;
-  }
-  h1, h2, h3 {
-    color: #2c3e50;
-    font-weight: 700;
-  }
-  h1 {
-    font-size: 2.8rem;
-    border-bottom: 4px solid #e3342f;
-    padding-bottom: 0.4rem;
-  }
-  h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid #e3342f;
-    padding-bottom: 0.3rem;
-    margin-top: 2rem;
-  }
-  p {
-    font-size: 1.1rem;
-  }
-  ul {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    margin-top: 0.5rem;
-  }
-  a {
-    color: #e3342f;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  code {
-    background: #f4f4f4;
-    border-radius: 4px;
-    padding: 2px 6px;
-    font-family: monospace;
-  }
-  pre {
-    background: #1e1e1e;
-    color: #d4d4d4;
-    padding: 1rem;
-    border-radius: 6px;
-    overflow-x: auto;
-    font-size: 0.95rem;
-  }
-  .badge {
-    display: inline-block;
-    padding: 0.25em 0.6em;
-    margin-right: 0.5em;
-    font-size: 0.85rem;
-    font-weight: 600;
-    line-height: 1;
-    color: white;
-    background-color: #e3342f;
-    border-radius: 0.25rem;
-  }
-  .center {
-    text-align: center;
-  }
-  img.logo {
-    max-width: 300px;
-    margin: 1rem 0 2rem;
-  }
-  footer {
-    font-size: 0.9rem;
-    color: #777;
-    border-top: 1px solid #ddd;
-    padding-top: 1rem;
-  }
-</style>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistema de Loja - README</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      line-height: 1.6;
+      background-color: #f9fafb;
+      color: #333;
+      margin: 20px auto;
+      max-width: 900px;
+      padding: 0 15px;
+    }
+    header, main, section, footer {
+      margin-bottom: 2rem;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.8rem;
+      border-bottom: 4px solid #e3342f;
+      padding-bottom: 0.4rem;
+    }
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #e3342f;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    a {
+      color: #e3342f;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background: #f4f4f4;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-family: monospace;
+    }
+    pre {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 0.95rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25em 0.6em;
+      margin-right: 0.5em;
+      font-size: 0.85rem;
+      font-weight: 600;
+      line-height: 1;
+      color: white;
+      background-color: #e3342f;
+      border-radius: 0.25rem;
+    }
+    .center {
+      text-align: center;
+    }
+    img.logo {
+      max-width: 300px;
+      margin: 1rem 0 2rem;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+    }
+  </style>
 </head>
 <body>
 
 <header class="center">
-  <img class="logo" src="https://raw.githubusercontent.com/Victor-Sevegnani/Sistema-de-Loja/main/logo.png" alt="Logo Sistema de Loja" />
+  <img
+    class="logo"
+    src="https://raw.githubusercontent.com/Victor-Sevegnani/Sistema-de-Loja/main/logo.png"
+    alt="Logo Sistema de Loja"
+  />
   <h1>Sistema de Loja 🛒</h1>
   <p>Um sistema moderno para gestão de lojas, com frontend em Vue.js e backend em PHP.</p>
   <p>
@@ -127,7 +136,9 @@ cd Sistema-de-Loja/backend
 composer install
 cp .env.example .env
 php artisan key:generate
+
 # Configure seu banco no arquivo .env
+
 php artisan migrate
 php artisan serve
 
@@ -136,7 +147,9 @@ cd ../frontend
 npm install
 npm run dev
 </code></pre>
-    <p>Acesse o frontend no navegador no endereço exibido pelo <code>npm run dev</code> (ex: <code>http://localhost:3000</code>).</p>
+    <p>
+      Acesse o frontend no navegador no endereço exibido pelo <code>npm run dev</code> (ex: <code>http://localhost:3000</code>).
+    </p>
   </section>
 
   <section>
