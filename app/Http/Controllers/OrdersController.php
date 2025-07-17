@@ -78,7 +78,7 @@ class OrdersController extends Controller
 
     public function find(int $id): JsonResponse
     {
-        return response()->json(OrdersModel::find($id));
+        return response()->json(OrdersModel::find($id), 200);
     }
 
 }

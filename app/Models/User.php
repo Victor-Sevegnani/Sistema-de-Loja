@@ -25,10 +25,9 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-    // CORREÇÃO: Use propriedade $casts, NÃO método casts()
     protected $casts = [
         'email_verified_at' => 'datetime',
-        // 'password' => 'hashed', // Só se Laravel >= 10
+        'password' => 'hashed',
     ];
 
     public function orders(): HasMany
